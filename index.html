@@ -364,61 +364,94 @@
         </a>
       </div>
     </section>
+
     <!-- ============================================ -->
-    <!--                   About                      -->
+    <!--                     FOOTER                   -->
     <!-- ============================================ -->
 
-    <section id="about"></section>
-  </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="logo-group">
+          <a aria-label="park place logo, click to back to homepage" href="#">
+            <img src="images/park-logo.svg" loading="lazy" aria-hidden="true" alt="">
+          </a>
+          <p>We are a full-service property management and hospitality company that specializes in maximizing returns on
+            short-term rental income to provide the most value for your money without you having to be a landlord. From
+            initial listing to maintenance and management, our team creates a 5-Star experience for guests and
+            unparalleled ROI for owners whether you have a commercial, residential or business office rental property to
+            manage.</p>
+        </div>
+        <div class="ridiculous">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Team</a>
+          <a href="">Faq</a>
+          <a href="#" class="button-solid">Contact</a>
 
-  <!-- ============================================ -->
-  <!--                     FOOTER                   -->
-  <!-- ============================================ -->
+          <ul>
+            <a href="">Services</a>
+            <li>
+              Virtual Host
+            </li>
+            <li>
+              Full Host
+            </li>
+            <li>
+              Excecutive rentals
+            </li>
+            <li>
+              More services +
+            </li>
+          </ul>
+          <ul>
+            <a href="">Cities +</a>
+            <li>Toronto</li>
+            <li>Miami</li>
+            <li>Las Vegas</li>
+          </ul>
+          <div class="social-group">
+            <a aria-label="facebook" href="#">
+              <img src="images/facebook.svg" loading="lazy" aria-hidden="true" alt="">
+            </a>
+            <a aria-label="linkeding" href="#">
+              <img src="images/linkedIn.svg" loading="lazy" aria-hidden="true" alt="">
+            </a>
+            <a aria-label="instagram" href="#">
+              <img src="images/instagram.svg" loading="lazy" aria-hidden="true" alt="">
+            </a>
+            <a aria-label="youtube" href="#">
+              <img src="images/youtube.svg" loading="lazy" aria-hidden="true" alt="">
+            </a>
+          </div>
+        </div>
+        <span>
+          Copyright 2021 Park Place Properties. All rights reserved. — Designed by <a href="#">Kurokawa</a>. Developed
+          by <a href="#">OHWD</a> .
+        </span>
+      </div>
+    </footer>
 
-  <footer id="footer">
-    <a class="footer-logo" aria-label="business logo" href="/index.html"><img aria-hidden="true"
-        src="./images/logo-icon.png" alt="" /></a>
-    <div class="contact-group">
-      <a class="phone" href="tel:555-555-1123">555.555.1123</a><span>Somewehere, Out There</span><a
-        href="example@email.com">example@email.com</a>
-    </div>
-    <ul>
-      <li><a href="/index.html" class="active">Home</a></li>
-      <li><a href="/html/about-turner-painting.html">About</a></li>
-      <li><a href="/index.html#services">Services</a></li>
-      <li><a href="/html/portfolio.html">Portfolio</a></li>
-      <li><a href="/html/contact.html">Contact</a></li>
-    </ul>
-    <span class="credit">Designed and Developed by
-      <a href="https://www.oakharborwebdesigns.com/">
-        Oak Harbor Web Designs</a><span class="copy">Copyright 2021</span></span>
-    <div class="circle-container">
-      <div aria-hidden="true" class="circle circle1"></div>
-      <div aria-hidden="true" class="circle circle2"></div>
-    </div>
-  </footer>
-
-  <script>
-    var ba = ["MSIE", "Trident", "Edge"];
-    var b,
-      ua = navigator.userAgent;
-    for (var i = 0; i < ba.length; i++) {
-      if (ua.indexOf(ba[i]) > -1) {
-        b = ba[i];
-        break;
+    <script>
+      var ba = ["MSIE", "Trident", "Edge"];
+      var b,
+        ua = navigator.userAgent;
+      for (var i = 0; i < ba.length; i++) {
+        if (ua.indexOf(ba[i]) > -1) {
+          b = ba[i];
+          break;
+        }
       }
-    }
-    if (b == "MSIE" || b == "Trident" || b == "Edge") {
-      b = "Internet Explorer";
-      alert(
-        "You are using the " +
-        b +
-        " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!"
-      );
-    }
-  </script>
+      if (b == "MSIE" || b == "Trident" || b == "Edge") {
+        b = "Internet Explorer";
+        alert(
+          "You are using the " +
+          b +
+          " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!"
+        );
+      }
+    </script>
 
-  <script defer src="./app.js"></script>
+    <script defer src="./app.js"></script>
 </body>
 
 </html>
