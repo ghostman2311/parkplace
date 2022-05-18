@@ -28,11 +28,32 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 110vh;
   }
-  
-  #hero h1{
-      color: #333;
-      font-weight: normal;
+
+  #hero h1 {
+    color: #333;
+    font-weight: normal;
+    margin-top: 100px;
+  }
+
+  #hero .stats .number {
+    font-size: 26px;
+    line-height: 40px;
+    color: var(--primary);
+    font-family: "montserrat_boldregular";
+    display: block;
+  }
+
+  #hero .stats .text {
+    display: block;
+    font-size: 13px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--primary);
+  }
+  #hero .stats .text span{
+    display: block;
   }
 }
 

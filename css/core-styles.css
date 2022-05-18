@@ -68,7 +68,6 @@
   a,
   li,
   span {
-    color: #292929;
     margin: 0;
     line-height: 28px;
     font-weight: normal;
@@ -82,7 +81,6 @@
   h6 {
     margin: 0;
     line-height: 1.2em;
-    color: #292929;
     margin-bottom: 30px;
   }
 
