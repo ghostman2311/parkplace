@@ -28,13 +28,46 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 110vh;
+    min-height: 100vh;
   }
 
   #hero h1 {
     color: #333;
     font-weight: normal;
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+  }
+
+  #hero .stat-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: relative;
+  }
+
+  #hero .stat-container::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 350px;
+    width: 500px;
+    background: #fff;
+    opacity: 0.4;
+    top: -20px;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%) rotate(1deg);
+  }
+
+  #hero .stats {
+    width: 100px;
+    margin-bottom: 22px;
+  }
+
+  #hero .stats:nth-of-type(1),
+  #hero .stats:nth-of-type(3) {
+    margin-right: 50px;
   }
 
   #hero .stats .number {
@@ -52,7 +85,7 @@
     text-transform: uppercase;
     color: var(--primary);
   }
-  #hero .stats .text span{
+  #hero .stats .text span {
     display: block;
   }
 }
