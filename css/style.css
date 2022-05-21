@@ -29,6 +29,23 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+    overflow: hidden;
+  }
+
+  #hero::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: var(--orange);
+    height: 30px;
+    width: 600px;
+    opacity: 1;
+    bottom: -94px;
+    left: 50%;
+    margin-left: -200px;
+    z-index: 10;
+    transform:rotate(2deg);
+
   }
 
   #hero h1 {
@@ -87,6 +104,57 @@
   }
   #hero .stats .text span {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1300px) {
+}
+
+/*-- -------------------------- -->
+<---          Management        -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+  #management {
+    position: relative;
+    z-index: 1;
+  }
+
+  #management::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    height: 284px;
+    width: 523px;
+    background: url("../images/city.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    transform: translateX(-50%) rotate(-2deg);
+    z-index: -2;
+  }
+
+  #management::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 283px;
+    width: 600px;
+    background: var(--primary);
+    top: 0;
+    left: 50%;
+    opacity: 0.9;
+    z-index: -1;
+    transform: translateX(-50%) rotate(-2deg);
   }
 }
 
