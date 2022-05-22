@@ -32,7 +32,7 @@
     overflow: hidden;
   }
 
-  #hero::before {
+  #hero:before {
     content: "";
     display: block;
     position: absolute;
@@ -42,10 +42,9 @@
     opacity: 1;
     bottom: -94px;
     left: 50%;
-    margin-left: -200px;
+    margin-left: -460px;
     z-index: 10;
-    transform:rotate(2deg);
-
+    transform: rotate(1deg);
   }
 
   #hero h1 {
@@ -123,7 +122,7 @@
 @media only screen and (min-width: 0px) {
   #management {
     position: relative;
-    z-index: 1;
+    z-index: 20;
   }
 
   #management::before {
@@ -155,6 +154,24 @@
     opacity: 0.9;
     z-index: -1;
     transform: translateX(-50%) rotate(-2deg);
+  }
+
+  #management .container h2 {
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  #managment .container h2 span {
+    display: block;
+    color: #fff;
+    font-weight: 300;
+  }
+
+  #management .container h2 span:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 16px;
   }
 }
 
